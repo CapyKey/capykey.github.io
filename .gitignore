@@ -1,0 +1,13 @@
+_site
+vendor/
+.DS_Store
+*.gem
+*.sublime-project
+*.sublime-workspace
+codekit-config.json
+Gemfile.lock
+node_modules
+npm-debug.log*
+
+.idea/
+dist
