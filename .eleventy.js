@@ -1,4 +1,10 @@
 module.exports = config => {
+
+    const postcssFilter = require('./src/filters/postcssFilter.js');
+
+    config.addNunjucksAsyncFilter('postcss', postcssFilter);
+    config.addWatchTarget('styles/**/*.css');
+
     return {
         markdownTemplateEngine: 'njk',
         dataTemplateEngine: 'njk',
