@@ -5,6 +5,8 @@ module.exports = config => {
     config.addNunjucksAsyncFilter('postcss', postcssFilter);
     config.addWatchTarget('styles/**/*.css');
 
+    config.addPassthroughCopy('./src/image/');
+
     return {
         markdownTemplateEngine: 'njk',
         dataTemplateEngine: 'njk',
